@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    border: 2px solid #000;
+    background: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button.selected:not(.send-order) {
+    background: #000;
+    color: white;
+}
+
+/* Icebreaker Canister */
+.canister {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 30% 30%, #e6e6e6, #cccccc);
+    border-radius: 50%;
+    border: 3px solid #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Label band across the middle */
+.label {
+    position: absolute;
+    padding: 5px 10px; /* extra space around text */
+    min-width: 120px;  /* starting size */
+    height: auto;      /* let height grow if needed */
+    border-radius: 20px;
+    background: white;
+    border: 2px solid #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    white-space: wrap; /* keep text on one line */
+}
+.vitamin-list {
+    position: absolute;
+    bottom: -35px; /* pushes it down inside the canister */
+    width: 80%;
+    text-align: center;
+    font-size: 10px;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
+.order {
+    margin-right: 43.45px;
+}
+.disporder {
+    margin-right: 43.45px;
+}
